@@ -20,7 +20,6 @@ function setTime(){
 
     var deg_hour=((hours%12)*30+90);
     hour_hand.style.transform = `rotate(${deg_hour}deg)`;
-    console.log(hours+"  "+minutes+"  "+seconds);
 }
 
 setInterval(setTime,1000);
