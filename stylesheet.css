@@ -42,21 +42,32 @@ body{
     box-shadow: 0px 0px 80px black;
 }
 
-.second-hand{
+.clock-handss{
     width: 150px;
     height: 0px;
-    border: 2px solid black;
-    background-color: black;
+    
+    transition: 0.09s;
+    transition-timing-function: cubic-bezier(0.18, 1.82, 0.58, 1);
     position: absolute;
     margin: 150px 0px 0px 0px;
     border-radius: 50%;
 }
+.second-hand{
+    transform: rotate(0deg);
+    transform-origin: right;
+    background-color: black;
+    border: 2px solid black;
+}
 .minute-hand{
     
-  transform: rotate(20deg);
+  transform: rotate(0deg);
   transform-origin: right;
+  background-color: black;
+  border: 2px solid black;
 }
 .hour-hand{
-    transform: rotate(40deg);
+    transform: rotate(0deg);
     transform-origin: right;
+    background-color:#374151;
+    border: 2px solid #374151;
 }
